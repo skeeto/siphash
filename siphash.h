@@ -9,6 +9,6 @@ struct siphash {
     uint64_t m;
 };
 
-void     siphash_init(struct siphash *, const void *key);
-void     siphash_update(struct siphash *, const void *, size_t);
-uint64_t siphash_final(const struct siphash *);
+void siphash128_init(struct siphash *, const void *key);
+void siphash128_update(struct siphash *, const void *, size_t);
+void siphash128_final(const struct siphash *, void *digest);
